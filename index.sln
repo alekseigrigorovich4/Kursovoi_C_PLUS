@@ -1,0 +1,353 @@
+#pragma once
+#include"MyForm.h"
+#include"MyForm1.h"
+#include"MyForm2.h"
+#include"MyForm4.h"
+#include"MyForm5.h"
+#include"MyForm3.h"
+#include"MyForm7.h"
+namespace Олимпиадныйстарт {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Сводка для MyForm
+	/// </summary>
+	public ref class MyForm : public System::Windows::Forms::Form
+	{
+	public:
+		MyForm(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: добавьте код конструктора
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Освободить все используемые ресурсы.
+		/// </summary>
+		~MyForm()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::Button^ button1;
+	protected:
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+
+
+
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^ файлToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ классToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ классToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ классToolStripMenuItem2;
+	private: System::Windows::Forms::ToolStripMenuItem^ интеллектуальнаяРазминкаToolStripMenuItem;
+
+	private: System::Windows::Forms::HelpProvider^ helpProvider1;
+	private: System::Windows::Forms::ToolStripMenuItem^ справкаToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ выходToolStripMenuItem;
+
+
+
+
+	private:
+		/// <summary>
+		/// Обязательная переменная конструктора.
+		/// </summary>
+		System::ComponentModel::Container^ components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Требуемый метод для поддержки конструктора — не изменяйте 
+		/// содержимое этого метода с помощью редактора кода.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->файлToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->классToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->классToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->классToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->интеллектуальнаяРазминкаToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->справкаToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->helpProvider1 = (gcnew System::Windows::Forms::HelpProvider());
+			this->выходToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->button1->Location = System::Drawing::Point(225, 282);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(191, 49);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"2 класс";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(225, 339);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(191, 49);
+			this->button2->TabIndex = 1;
+			this->button2->Text = L"3 класс";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(225, 396);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(191, 49);
+			this->button3->TabIndex = 2;
+			this->button3->Text = L"4 класс";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(427, 552);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(191, 49);
+			this->button4->TabIndex = 3;
+			this->button4->Text = L"Выйти";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(225, 453);
+			this->button5->Margin = System::Windows::Forms::Padding(4);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(191, 49);
+			this->button5->TabIndex = 4;
+			this->button5->Text = L"Интеллектуальная разминка";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->файлToolStripMenuItem,
+					this->справкаToolStripMenuItem, this->выходToolStripMenuItem
+			});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(631, 28);
+			this->menuStrip1->TabIndex = 5;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// файлToolStripMenuItem
+			// 
+			this->файлToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->классToolStripMenuItem,
+					this->классToolStripMenuItem1, this->классToolStripMenuItem2, this->интеллектуальнаяРазминкаToolStripMenuItem
+			});
+			this->файлToolStripMenuItem->Name = L"файлToolStripMenuItem";
+			this->файлToolStripMenuItem->Size = System::Drawing::Size(59, 24);
+			this->файлToolStripMenuItem->Text = L"Файл";
+			// 
+			// классToolStripMenuItem
+			// 
+			this->классToolStripMenuItem->Name = L"классToolStripMenuItem";
+			this->классToolStripMenuItem->Size = System::Drawing::Size(291, 26);
+			this->классToolStripMenuItem->Text = L"2 класс";
+			this->классToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::классToolStripMenuItem_Click);
+			// 
+			// классToolStripMenuItem1
+			// 
+			this->классToolStripMenuItem1->Name = L"классToolStripMenuItem1";
+			this->классToolStripMenuItem1->Size = System::Drawing::Size(291, 26);
+			this->классToolStripMenuItem1->Text = L"3 класс";
+			this->классToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::классToolStripMenuItem1_Click);
+			// 
+			// классToolStripMenuItem2
+			// 
+			this->классToolStripMenuItem2->Name = L"классToolStripMenuItem2";
+			this->классToolStripMenuItem2->Size = System::Drawing::Size(291, 26);
+			this->классToolStripMenuItem2->Text = L"4 класс";
+			this->классToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MyForm::классToolStripMenuItem2_Click);
+			// 
+			// интеллектуальнаяРазминкаToolStripMenuItem
+			// 
+			this->интеллектуальнаяРазминкаToolStripMenuItem->Name = L"интеллектуальнаяРазминкаToolStripMenuItem";
+			this->интеллектуальнаяРазминкаToolStripMenuItem->Size = System::Drawing::Size(291, 26);
+			this->интеллектуальнаяРазминкаToolStripMenuItem->Text = L"Интеллектуальная разминка";
+			this->интеллектуальнаяРазминкаToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::интеллектуальнаяРазминкаToolStripMenuItem_Click);
+			// 
+			// справкаToolStripMenuItem
+			// 
+			this->справкаToolStripMenuItem->Name = L"справкаToolStripMenuItem";
+			this->справкаToolStripMenuItem->Size = System::Drawing::Size(81, 24);
+			this->справкаToolStripMenuItem->Text = L"Справка";
+			this->справкаToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::справкаToolStripMenuItem_Click);
+			// 
+			// helpProvider1
+			// 
+			this->helpProvider1->HelpNamespace = L"Справка_Олимпиадный_старт.chm";
+			// 
+			// выходToolStripMenuItem
+			// 
+			this->выходToolStripMenuItem->Name = L"выходToolStripMenuItem";
+			this->выходToolStripMenuItem->Size = System::Drawing::Size(67, 24);
+			this->выходToolStripMenuItem->Text = L"Выход";
+			this->выходToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::выходToolStripMenuItem_Click_1);
+			// 
+			// MyForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(10, 20);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::GrayText;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(631, 614);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->menuStrip1);
+			this->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedDialog;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(4);
+			this->MaximizeBox = false;
+			this->Name = L"MyForm";
+			this->helpProvider1->SetShowHelp(this, true);
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Олимпиадный старт";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		MyForm1^ newForm = gcnew MyForm1();//Создаем указатель на 2 форму
+		newForm->Show(); // Открываем новую форму
+		this->Hide(); // Опционально: скрываем текущую форму
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		MyForm2^ newForm = gcnew MyForm2();//Создаем указатель на 2 форму
+		newForm->Show(); // Открываем новую форму
+		this->Hide(); // Опционально: скрываем текущую форму
+	}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close(); // Опционально: скрываем текущую форму
+		Application::Exit();
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		MyForm3^ newForm = gcnew MyForm3();//Создаем указатель на 2 форму
+		newForm->Show(); // Открываем новую форму
+		this->Hide();
+	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		MyForm7^ newForm1 = gcnew MyForm7();//Создаем указатель на 2 форму
+		newForm1->Show(); // Открываем новую форму
+		this->Hide(); // Опционально: скрываем текущую форму
+}
+private: System::Void ПравилаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show(
+		"1.В приложении доступны три режима: 1 и 2 уровени сложности, Олимпиады.\n"
+		"2.Чтобы открыть 2 уровень, необходимо набрать не менее 8 баллов на 1 уровне.\n"
+		"3.Чтобы получить доступ к Олимпиаде, необходимо набрать не менее 8 баллов на 2 уровне.\n"
+		"4.Также предусмотрены разгадывание ребусов, которые могут помочь в развитии логики и мышления.\n",
+		"Правила"
+	);
+
+}
+private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show(
+		"Приложение \"Олимпиадный старт\".\n\n"
+		"Содержит:\n"
+		"- тренировочные задания по уровням для 2,3 и 4 классов;\n"
+		"- олимпиадные задания для 2,3 и 4 классов;\n\n"
+		"Разработчик: Григорович Алексей Павлович\n"
+		"Группа: ПЗТ-43\n"
+		"Версия: 1.0\n"
+		"Дата: 25.06.2025",
+		"О программе"
+	);
+}
+private: System::Void поддержкаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show(
+		"Если возникли ошибки или вопросы — свяжитесь с разработчиком:\n\n"
+		"Email: alekseigrigorovich4@gmail.com\n"
+		"Telegram: @leha28_05\n\n"
+		"Спасибо за использование приложения!",
+		"Поддержка"
+	);
+}
+private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close(); // Опционально: скрываем текущую форму
+	Application::Exit();
+}
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void классToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyForm1^ newForm = gcnew MyForm1();//Создаем указатель на 2 форму
+	newForm->Show(); // Открываем новую форму
+	this->Hide(); // Опционально: скрываем текущую форму
+}
+private: System::Void классToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyForm2^ newForm = gcnew MyForm2();//Создаем указатель на 2 форму
+	newForm->Show(); // Открываем новую форму
+	this->Hide(); // Опционально: скрываем текущую форму
+}
+private: System::Void классToolStripMenuItem2_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyForm3^ newForm = gcnew MyForm3();//Создаем указатель на 2 форму
+	newForm->Show(); // Открываем новую форму
+	this->Hide();
+}
+private: System::Void интеллектуальнаяРазминкаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyForm7^ newForm1 = gcnew MyForm7();//Создаем указатель на 2 форму
+	newForm1->Show(); // Открываем новую форму
+	this->Hide(); // Опционально: скрываем текущую форму
+}
+private: System::Void выходToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close(); // Опционально: скрываем текущую форму
+	Application::Exit();
+}
+private: System::Void справкаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	System::Windows::Forms::Help::ShowHelp(this, "spravka.chm");
+
+
+}
+private: System::Void выходToolStripMenuItem_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	this->Close(); // Опционально: скрываем текущую форму
+	Application::Exit();
+}
+};
+}
